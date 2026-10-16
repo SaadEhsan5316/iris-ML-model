@@ -1,0 +1,27 @@
+[project]
+name = "mt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SaadEhsan5316", email = "saadehsan5316@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.143.2",
+    "ipython>=9.17.1",
+    "matplotlib>=3.11.2",
+    "mglearn>=0.2.0",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "psycopg[binary]>=3.3.6",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+mt = "mt:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
